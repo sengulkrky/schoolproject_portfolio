@@ -1,0 +1,108 @@
+/* Introductieoefening */
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #fffdff;
+  --primary: #202026;
+
+  font-family: "Fredoka";
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  background-color: var(--bg);
+  color: var(--primary);
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+header {
+  background-color: #00002e;
+  color: #fffdff;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0 0 0 -2rem;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav a {
+  padding: 1rem 2rem;
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+
+main {
+  nav {
+    --text: #fffdff;
+    --bg: #00002e;
+  }
+
+  nav a {
+    color: var(--text);
+    background-color: var(--bg);
+    transition: color 0.2s ease-in;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--bg);
+      background-color: var(--text);
+    }
+  }
+
+  nav li:first-child {
+    margin-inline-end: auto;
+    margin-left: 2rem;
+  }
+}
+
+.content {
+  flex-basis: 1rem;
+
+  padding: 15px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cards li {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  min-width: 18rem;
+  height: auto;
+  box-shadow: 0 0 0.2rem rgb(0 0 0 / 0.2), 0 0 2rem rgb(0 0 0 / 0.1);
+  overflow: hidden;
+}
+
+.overlay-link {
+  position: absolute;
+  inset: 0;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cards li a:not(.overlay-link) {
+  z-index: 1;
+}

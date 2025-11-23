@@ -1,0 +1,139 @@
+/* Introductieoefening */
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #fffdff;
+  --primary: #202026;
+
+  font-family: "Fredoka";
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  background-color: var(--bg);
+  color: var(--primary);
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+header {
+  background-color: #00002e;
+  color: #fffdff;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0 0 0 -2rem;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav a {
+  padding: 1rem 2rem;
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Oefening 1: Columns */
+.row {
+  display: flex;
+  gap: 2rem;
+
+  > * {
+    border: dashed 1px black;
+    padding: 1rem;
+  }
+
+  > *:first-child {
+    flex-grow: 2;
+  }
+}
+
+/* Oefening 2: Nav */
+.visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);   
+    clip-path: inset(50%); 
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+main {
+    nav {
+        --text: #FFFDFF;
+        --bg: #00002e;
+    }
+
+    nav a {
+        color: var(--text);
+        background-color: var(--bg);
+        transition: color .2s ease-in;
+
+        &:hover,
+        &:focus-visible {
+            color: var(--bg);
+            background-color: var(--text);
+        }
+    }
+
+    nav li:first-child {
+        margin-inline-end: auto;
+        margin-left: 2rem;
+    }
+}
+
+/* Oefening 3: Cards */
+.content {
+    flex-basis: 18rem;
+    box-shadow: 0 0 .2rem rgb(0 0 0 / .2), 0 0 2rem rgb(0 0 0 / .1);
+    padding: 15px;
+}
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.cards li {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.cards img {
+    order: -1;
+}
+
+
+.overlay-link {
+    position: absolute;
+    inset: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.cards li a:not(.overlay-link) {
+    z-index: 1;
+}
+

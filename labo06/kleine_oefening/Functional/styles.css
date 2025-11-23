@@ -1,0 +1,77 @@
+.font1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.flexcol {
+  display: flex;
+  flex-direction: column;
+}
+
+.shadow-1 {
+  box-shadow: 0 0 0.2rem rgb(0 0 0 / 0.2), 0 0 2rem rgb(0 0 0 / 0.1);
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.border-1 {
+  border-radius: 10px;
+}
+
+.border-2 {
+  border-radius: 5px;
+}
+
+.border-3 {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.color-1 {
+  color: #fff;
+}
+
+.color-2 {
+  color: rgb(129, 124, 125);
+}
+
+.text-size-1 {
+  font-size: 18px;
+}
+
+.text-size-2 {
+  font-size: 20px;
+}
+
+.text-size-3 {
+  font-size: 14px;
+}
+
+.p1 {
+  padding: 5px;
+}
+
+.p2 {
+  padding: 15px;
+}
+
+.pbt {
+  padding-bottom: 10px;
+}
+
+.w1 {
+  max-width: 350px;
+}
+
+.w2 {
+  width: 40%;
+}
+
+.fw1 {
+  font-weight: bold;
+}
+
+.m1 {
+  margin: 10px 0px;
+}

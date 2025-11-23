@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Labo 02</title>
+    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#introductie">Introductieoefening</a></li>
+            <li><a href="#linkContainer">Container</a></li>
+            <li><a href="#navigatie">Nav</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>Labo 02</h1>
+        <section>
+          <h2 id="introductie">Introductieoefening</h2>
+          <p>Start een nieuw project in je IDE naar keuze.</p>
+          <ol>
+            <li>Zorg voor een index.html en een styles.css</li>
+            <li>
+              Pas je HTML <span class="highlight">lang attribuut</span> aan.
+            </li>
+            <li>Geef je document de title "Labo 02".</li>
+          </ol>
+          <h3>Stap 1: HTML</h3>
+          <ol>
+            <li>
+              Vergeet je <span class="highlight">landmark regions</span> niet!
+            </li>
+            <li>
+              Deel je hoofdinhoud (main) op in sections. <br />Pas alles toe wat
+              je geleerd hebt in week 1.
+            </li>
+            <li>
+              Tip = de links in de navigatie zijn
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a"
+                >same page links</a
+              >.
+            </li>
+            <li>
+              Valideer je code regelmatig met de
+              <a href="https://validator.w3.org/">W3C-validator</a> en met de
+              <a href="https://www.deque.com/axe/browser-extensions/">
+                aXe devtools </a
+              >.
+            </li>
+          </ol>
+          <h3>Stap 2: link-tags</h3>
+          <ol>
+            <li>
+              Voeg
+              <a href="https://github.com/csstools/normalize.css/"
+                >normalize.css</a
+              >
+              toe in de head van je HTML-document.
+            </li>
+            <li>
+              Voeg een google font (Montserrat) toe in de head van je
+              HTML-document.
+            </li>
+            <li>Koppel je eigen styles.css aan je HTML.</li>
+          </ol>
+          <h3>Stap 3: start CSS</h3>
+          <ol>
+            <li>
+              "Corrigeer" de box-sizing property van alle elementen en van alle
+              ::before en ::after pseudo-elementen.<br />Zie theorie!
+            </li>
+            <li>
+              Maak een selector voor het root element &rarr; :root {...}
+              <ul>
+                <li>Pas de background-color aan naar #FFFDFF.</li>
+                <li>
+                  Pas de font-family aan naar Montserrat en vergeet je fallback
+                  font niet!
+                </li>
+                <li>Zet de line-height op 1.6.</li>
+                <li>Zet scroll-behavior op smooth.</li>
+              </ul>
+            </li>
+            <li>
+              Maak een selector voor het body-element &rarr; body {...}
+              <br />Zet de margin op 0.
+            </li>
+          </ol>
+          <h3>Stap 4: vragen</h3>
+          <ol>
+            <li>
+              Wat doet normalize.css?
+              <ul>
+                <li>
+                  Het is een CSS library die default styling mogelijk maakt van
+                  HTML elementen.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Wat is een fallback font, wat doet het, welk heb je gekozen en
+              waarom?
+              <ul>
+                <li>
+                  Het is een reservelettertype dat wordt gebruikt als het
+                  gewenste lettertype niet kan gebruikt worden omdat het
+                  bijvoorbeeld niet kan geladen worden.
+                </li>
+                <li>
+                  Ik heb 'sans serif' gekozen omdat ik het een leuk lettertype
+                  vind.
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </section>
+        <section>
+          <h2 id="linkContainer">Container</h2>
+          <p>
+            Een container is een typisch hulpmiddel om te zorgen dat de inhoud
+            van je site niet uitgesmeerd wordt over je volledige schermbreedte.
+            Je vindt die op héél veel websites terug
+            <strong> en is verplicht aanwezig in je portfolio. </strong>
+          </p>
+        </section>
+        <section>
+          <h2 id="navigatie">Nav</h2>
+          <p>Plaats hier een screenshot van jouw nav.</p>
+          <img src="img/navigatie.png" alt="screenshot navigatie" />
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container"><p>&copy; 2024 ELOICT</p></div>
+    </footer>
+  </body>
+</html>
